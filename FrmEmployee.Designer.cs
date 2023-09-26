@@ -45,7 +45,7 @@ namespace PersonelTracking
             this.btnBrowse = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelSalary = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSalary = new System.Windows.Forms.TextBox();
             this.cmbPosition = new System.Windows.Forms.ComboBox();
             this.cmbDepartment = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -112,6 +112,7 @@ namespace PersonelTracking
             this.btnCheck.TabIndex = 6;
             this.btnCheck.Text = "Check";
             this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // txtUserNo
             // 
@@ -213,13 +214,13 @@ namespace PersonelTracking
             this.labelSalary.TabIndex = 14;
             this.labelSalary.Text = "Salary";
             // 
-            // textBox1
+            // txtSalary
             // 
-            this.textBox1.Location = new System.Drawing.Point(111, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.txtSalary.Location = new System.Drawing.Point(111, 194);
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.Size = new System.Drawing.Size(100, 20);
+            this.txtSalary.TabIndex = 15;
+            this.txtSalary.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // cmbPosition
             // 
@@ -317,6 +318,7 @@ namespace PersonelTracking
             this.btnSave.TabIndex = 24;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FrmEmployee
             // 
@@ -333,7 +335,7 @@ namespace PersonelTracking
             this.Controls.Add(this.cmbDepartment);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.labelDepartment);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSalary);
             this.Controls.Add(this.labelSalary);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnBrowse);
@@ -373,7 +375,7 @@ namespace PersonelTracking
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelSalary;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSalary;
         private System.Windows.Forms.ComboBox cmbPosition;
         private System.Windows.Forms.ComboBox cmbDepartment;
         private System.Windows.Forms.Label label5;
