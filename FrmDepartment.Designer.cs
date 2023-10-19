@@ -85,6 +85,7 @@ namespace PersonelTracking
             this.Controls.Add(this.btnSave);
             this.Name = "FrmDepartment";
             this.Text = "Department";
+            this.Load += new System.EventHandler(this.FrmDepartment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

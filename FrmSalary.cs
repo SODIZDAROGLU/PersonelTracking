@@ -77,7 +77,7 @@ namespace PersonelTracking
             txtLName.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString(); 
             txtYear.Text = DateTime.Today.Year.ToString();
             txtSalary.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
-          
+            salary.EmployeeID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
