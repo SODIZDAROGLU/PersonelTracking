@@ -72,7 +72,7 @@ namespace PersonelTracking
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 90);
+            this.panel1.Size = new System.Drawing.Size(914, 90);
             this.panel1.TabIndex = 0;
             // 
             // chkbxIsAdmin
@@ -197,9 +197,9 @@ namespace PersonelTracking
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(530, 96);
+            this.pictureBox1.Location = new System.Drawing.Point(439, 96);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 120);
+            this.pictureBox1.Size = new System.Drawing.Size(322, 284);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -280,7 +280,7 @@ namespace PersonelTracking
             // 
             this.labelAdress.AutoSize = true;
             this.labelAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAdress.Location = new System.Drawing.Point(16, 328);
+            this.labelAdress.Location = new System.Drawing.Point(19, 402);
             this.labelAdress.Name = "labelAdress";
             this.labelAdress.Size = new System.Drawing.Size(65, 20);
             this.labelAdress.TabIndex = 22;
@@ -288,7 +288,7 @@ namespace PersonelTracking
             // 
             // txtAdress
             // 
-            this.txtAdress.Location = new System.Drawing.Point(87, 312);
+            this.txtAdress.Location = new System.Drawing.Point(90, 386);
             this.txtAdress.Multiline = true;
             this.txtAdress.Name = "txtAdress";
             this.txtAdress.Size = new System.Drawing.Size(615, 76);
@@ -301,7 +301,7 @@ namespace PersonelTracking
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(318, 393);
+            this.btnClose.Location = new System.Drawing.Point(321, 467);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(80, 45);
             this.btnClose.TabIndex = 25;
@@ -312,7 +312,7 @@ namespace PersonelTracking
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(226, 394);
+            this.btnSave.Location = new System.Drawing.Point(229, 468);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 44);
             this.btnSave.TabIndex = 24;
@@ -324,7 +324,7 @@ namespace PersonelTracking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 535);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtAdress);

@@ -93,7 +93,7 @@ namespace PersonelTracking
             if (string.IsNullOrEmpty(txtUserNo.Text.Trim()))
                 MessageBox.Show("UserNo is Empty");
             else if (!EmployeeBLL.IsUnique(Convert.ToInt32(txtUserNo.Text)))
-                MessageBox.Show("This UserNo is not available");
+                MessageBox.Show("This User No is used by another employee");
             else if (string.IsNullOrEmpty(txtPassword.Text.Trim()))
                 MessageBox.Show("Password is Empty");
             else if (string.IsNullOrEmpty(txtFName.Text.Trim()))
@@ -155,9 +155,9 @@ namespace PersonelTracking
             {
                 isUnique = EmployeeBLL.IsUnique(Convert.ToInt32(txtUserNo.Text));
                 if (!isUnique)
-                    MessageBox.Show("This UserNo is not available");
+                    MessageBox.Show("This User is exist..!!!!!!","WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
-                    MessageBox.Show("This UserNo is available");
+                    MessageBox.Show("Good news.....This User No is available");
             }
         }
     }
