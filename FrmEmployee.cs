@@ -23,10 +23,7 @@ namespace PersonelTracking
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
 
         private void txtUserNo_TextChanged(object sender, EventArgs e)
         {
@@ -157,8 +154,14 @@ namespace PersonelTracking
                 if (!isUnique)
                     MessageBox.Show("This User is exist..!!!!!!","WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
-                    MessageBox.Show("Good news.....This User No is available");
+                    MessageBox.Show($"Good news..... User No:{txtUserNo.Text} is available");
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
         }
     }
 }
