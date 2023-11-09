@@ -73,7 +73,7 @@ namespace PersonelTracking
         }
 
         string fileName = "";
-
+        
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -118,9 +118,12 @@ namespace PersonelTracking
                 employee.PositionId = Convert.ToInt32(cmbPosition.SelectedValue);
                 employee.Adress = txtAdress.Text;
                 employee.BirthDay = dateTimePicker1.Value;
-                employee.ImagePath = fileName;
+                employee.ImagePath = fileName; 
                 EmployeeBLL.AddEmployee(employee);
-                File.Copy(txtImage.Text, @"images\\" + fileName);
+                if (!String.IsNullOrEmpty(fileName))
+                    File.Copy(txtImage.Text, @"images\\" + fileName);
+                else
+                    employee.ImagePath = "No Image";
                 MessageBox.Show("Employee added");
                 txtUserNo.Clear();
                 txtPassword.Clear();
@@ -161,7 +164,7 @@ namespace PersonelTracking
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-
+     
         }
     }
 }

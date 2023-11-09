@@ -27,7 +27,7 @@ namespace PersonelTracking
         }
 
         SalaryDTO dto = new SalaryDTO();
-        bool combofull = false;
+        private bool combofull = false;
 
         private void FrmSalary_Load(object sender, EventArgs e)
         {

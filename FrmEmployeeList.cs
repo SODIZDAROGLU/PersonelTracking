@@ -31,6 +31,8 @@ namespace PersonelTracking
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;
+            dto = EmployeeBLL.GetAll();
+            dataGridView1.DataSource = dto.Employees;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
